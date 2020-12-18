@@ -1,0 +1,58 @@
+.fundtab{
+  background-color: rgb(228, 228, 228);
+}
+
+.fundtab2{
+  background-color: rgb(39, 39, 39);
+  color: white;
+  text-align: right;
+}
+
+.fundtab3{
+  background-color: rgb(228, 228, 228);
+}
+.icon{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.t1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.t2{
+  font-weight: 100;
+  font-size: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.t3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao{
+  position: absolute;
+  top: 8px;
+  right:15px;
+}
+
+.jumbotron{
+  padding: 8px;
+}
+

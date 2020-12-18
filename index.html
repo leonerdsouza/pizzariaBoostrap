@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzaria</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+        <div class="col-4"><button type="button" class="btn btn-primary botao">
+          Acompanhe seu pedido
+        </button></div>
+      </div>
+      <div class="display-4 logo"><img src="imagens/logo-pizzaria.png" alt="some text" width=230 height=200></div>
+      <hr class="my-4">
+      <p class="lead info">Utilize as opções disponíveis abaixo para selecionar seus produtos e realizar seu pedido</p>
+    </div>
+  </div>
+  <!-- parte 1 -->
+  <div class="container">
+    <div class="card">
+      <h5 class="card-header"><button type="text" class="btn btn-primary icon">
+        1 <span class="badge badge-light"></span>
+      </button>Escolha os produtos</h5>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-4">
+            <p class="card-title">Selecione um produto <span class="text-danger">
+              *
+            </span>
+          </p>
+          </div>
+          <div class="col-4">
+            <p class="card-text">Quantidade <span class="text-danger">
+              *
+            </span></p> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <select class="form-control">
+              <option>----</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <input class="form-control"></input>
+          </div>
+          <div class="col-4">
+            <a href="#" class="btn btn-primary">Adicionar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- parte 2 -->
+  <div class="container">
+    <div class="card">
+      <h5 class="card-header"><button type="text" class="btn btn-primary icon">
+        2 <span class="badge badge-light"></span>
+      </button>Produtos do seu pedido</h5>
+      <div class="card-body">
+        <table class="table table-bordered">
+          <thead class="thead">
+            <tr class="fundtab">
+              <th scope="col"width="10%">#</th>
+              <th scope="col" width="35%">Produto</th>
+              <th scope="col"width="25%">Qtd</th>
+              <th scope="col"width="15%">Preço Unit.</th>
+              <th scope="col"width="15%">Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><img src="imagens/pizza-calabresa.jpg" alt="some text" width=90 height=60></th>
+              <td>Pizza Calabresa<div class="col-13"><button type="text" class="btn btn-danger">
+                Remover <span class="badge badge-light"></span></div></td>
+              <td>Valor 31</td>
+              <td>Valor 41</td>
+              <td>Valor 51</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="imagens/pizza-4-queijos.jpg" alt="some text" width=90 height=60></th>
+              <td>Pizza 4 Queijos<div class="col-13"><button type="text" class="btn btn-danger">
+                Remover <span class="badge badge-light"></span></div></td>
+              <td>Valor 31</td>
+              <td>Valor 41</td>
+              <td>Valor 51</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="imagens/pizza-marguerita.jpg" alt="some text" width=90 height=60></th>
+              <td>Pizza Marguerita
+                <div class="col-13"><button type="text" class="btn btn-danger">
+                  Remover <span class="badge badge-light"></span></div>
+                </td>
+              <td>Valor 31</td>
+              <td>Valor 41</td>
+              <td>Valor 51</td>
+            </tr>
+            <tr>
+              <!-- <th scope="row"></th> -->
+              <td colspan="4" width="100%" class="fundtab2">Total do Pedido:</td>
+              <td width="25%"class="fundtab3">R$:0,00</td>
+            </tr>
+          </tbody>
+        </table>  
+        <table class="table">
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- parte 3 -->
+  <div class="container">
+    <div class="card">
+      <h5 class="card-header"><button type="text" class="btn btn-primary icon">
+        3 <span class="badge badge-light"></span>
+      </button>Informações adicionais</h5>
+      <div class="card-body">
+          <form>
+              <div class="form-group">
+                <label for="inputAddress">Nome completo<span class="text-danger">
+                  *
+                </span></label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Digite seu nome">
+              </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email<span class="text-danger">
+                  *
+                </span></label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Digite seu email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Telefone<span class="text-danger">
+                  *
+                </span></label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Digite seu telefone">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-2">
+                <label for="inputEmail4">CEP<span class="text-danger">
+                  *
+                </span></label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="00000-000">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPassword4">Endereço<span class="text-danger">
+                  *
+                </span></label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="...">
+              </div>
+              <div class="form-group col-md-1">
+                <label for="inputPassword4">Nº<span class="text-danger">
+                  *
+                </span></label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="...">
+              </div>
+              <div class="form-group col-md-5">
+                <label for="inputPassword4">Complemento<span class="text-danger">
+                  *
+                </span></label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="...">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputEmail4">Bairro<span class="text-danger">
+                  *
+                </span></label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="...">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPassword4">Cidade<span class="text-danger">
+                  *
+                </span></label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="...">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPassword4">Estado<span class="text-danger">
+                  *
+                </span></label>
+                <select type="password" class="form-control" id="inputPassword4" placeholder="--">
+                </select>
+              </div>
+            </div> 
+            <div class ="form-row">
+              <label for="inputPassword4">Observações</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Ex: por favor, colocar poucas azeitonas na pizza">
+            </div>
+            <br>
+           </form> 
+           <div class = "form-row">
+            <button type="text" class="btn btn-success">
+              Enviar Pedido <span class="badge badge-light"></span>
+           </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- parte 4 -->
+  <div class="container">
+    <div class="card">
+      <h5 class="card-header"><button type="text" class="btn btn-primary icon">
+        4 <span class="badge badge-light"></span>
+      </button>Finalização</h5>
+      <div class="card-body">
+        <div>
+          <div class="alert alert-success" role="alert">
+            <p class="alert-heading texto t1">código do pedido:</p>
+            <h3 class="t2">Q5PaXtkK</h3>
+            <hr>
+            <p class="mb-0 t3">Seu pedido foi enviado com sucesso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
